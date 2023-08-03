@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<style type="text/css">
+	body {
+	font-family: 'Graphik Web',Helvetica,sans-serif;
+    //font-size: 62.5%;
+    line-height: 1.5em;
+	color: #111324;	
+	}
+	a { color: #7856ff; font-weight: bold; }
+</style>
+</head>
+
+<body>
+	
+<p>Hi {!Contact.FirstName}, </p>
+
+<p>This is {!Case.OwnerFirstName}, I look after Customer Experience for {!Account.Region__c}. Your account has been highlighted as a new customer who could benefit from a call - and so I'd like to extend you a personal welcome and offer our services, where relevant.</p> 
+
+<p>Let's schedule a complimentary call, to: </p>
+
+	<ul><li>Get you started with your account, by recommending videos, guides and other resources </li>
+		<li>Structure your ideal billing plan </li>
+		<li>Outline which integrations are available for connecting your business apps </li>
+		<li>Connect you with our support team </li>
+<li>Design and create your emails, with our Professional Services team </li></ul>
+
+<p>In addition, we would like to ask a few questions about your email marketing goals, to inform our internal teams as to how we can improve our service for you. This is not a sales call - we just want to assist you with getting results.</p> 
+
+<p><br/><span style="padding:10px; background-color: #7856ff;color: #fff;border-radius:3px;"><strong>To book an orientation &amp; training call with me, <a href="https://cm.chilipiper.com/book/me/{!User.EmployeeNumber}?caseid={!Case.Id}&type=cm-200club" style="color: #fff;font-weight: bold;" target="_blank">please schedule a time in my calendar here</a>.</strong></span></p>
+	
+<p><br/>Thank you so much - I look forward to talking to you. </p>
+
+<p>Regards, <br />
+{!Case.OwnerFirstName} <br />
+Customer Experience, Campaign Monitor </p>
+
+<p>PS: Between now and our call, I recommend taking a look at our Getting Started resources, at <a href="http://campaignmonitor.com/gettingstarted" target="_blank">http://campaignmonitor.com/gettingstarted</a></p>
+	
+</body>
+</html>
